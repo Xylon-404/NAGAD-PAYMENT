@@ -1,0 +1,143 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 350px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 120px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.icon {
+    margin-top: 20px; 
+}
+
+.icon img {
+    width: 110px;
+    height: 112px;
+    cursor: pointer;
+    margin-bottom: 15px; 
+}
+
+h2 {
+    font-size: 22px;
+    color: #FF5722;
+    margin: 10px 0;
+}
+
+.number {
+    font-size: 17px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.line {
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+}
+
+.details {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.details p {
+    font-size: 15px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #FF5722;
+}
+
+.details p strong {
+    color: #333;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.actions button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #FF5722;
+}
+
+.actions button svg {
+    stroke: #FF5722;
+}
+
+.actions .icon-call svg,
+.actions .icon-message svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.home, .download {
+    background-color: #FF5722;
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 15px;
+    width: 280px;
+    height: 45px;
+    position: relative;
+}
+
+.home:hover, .download:hover {
+    background-color: #FF5722;
+}
+
+.bottom-line {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #000000;
+    font-size: 15px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.footer a {
+    color: #FF5722;
+    text-decoration: none;
+    animation: glowing 1.5s infinite;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none !important;
+}
+
+[contenteditable="true"] {
+    border: 1px dashed #ffffff;
+    padding: 2px;
+}

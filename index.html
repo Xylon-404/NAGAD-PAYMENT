@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    	<link rel="shortcut icon" href="https://i.ibb.co/n0yL4dR/1679248787-Nagad-Logo-1.png" />
+    <meta property="og:title" content="সহজেই তৈরি করুন ন-গদ ফে-ক পে-মেন্ট স্ক্রিনশট – একদম বিনামূল্যে!" />
+    <meta property="og:description" content="সহজেই তৈরি করুন ন-গদ ফে-ক পে-মেন্ট স্ক্রিনশট – একদম বিনামূল্যে!" />
+    <meta property="og:image" content="https://i.ibb.co.com/WBbMyZm/IMG-20241112-162608-981.jpg" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagad-Fake-Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<br>
+		<br>
+    <div class="container" id="payment-container">
+        <div class="icon">
+            <img id="payment-img" src="https://i.postimg.cc/kV7Hx3nn/20240901-003756.png" alt="Success" onclick="toggleImageAndColor()">
+        </div>
+        <h2 id="success-message" contenteditable="true">সেন্ড মানি সফল</h2>
+        <div class="number" contenteditable="true">
+            <strong>01977588678</strong>
+        </div>
+        <div class="line"></div>
+        <div class="details">
+            <p>ট্রানজেকশন আইডি: <strong contenteditable="true">ADK703EFBF</strong></p>
+            <p>পরিমাণ: <strong contenteditable="true">1000 টাকা</strong></p>
+            <p>খরচ: <strong contenteditable="true">5 টাকা</strong></p>
+            <p>সর্বমোট: <strong contenteditable="true">8000 টাকা</strong></p>
+            <p>সময়: <strong contenteditable="true">30 August 2024, 12:00 AM</strong></p>
+        </div>
+        <div class="line"></div>
+        <div class="actions">
+            <button class="icon-call">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FF5722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                কল
+            </button>
+            <button class="icon-message">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FF5722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                মেসেজ
+            </button>
+        </div>
+        <div class="bottom-line"></div>
+        <button class="home">হোম এ ফিরে যান</button>
+        <button class="download" onclick="downloadImage()">ডাউনলোড করুন</button>
+        <div class="footer">
+           Developed by <a id="developer-link" href="https://xylon.netlify.app/" target="_blank">ABDULLHA</a> | Join our <a id="telegram-link" href="https://t.me/Abdullha_404" target="_blank">Telegram</a>
+        </div>
+   
+    <script>
+        let isGreen = false; 
+
+        function toggleImageAndColor() {
+            const successMessage = document.getElementById("success-message");
+            const detailsText = document.querySelectorAll('.details p');
+            const buttons = document.querySelectorAll('.home, .download');
+            const icons = document.querySelectorAll('.actions button svg');
+            const buttonText = document.querySelectorAll('.actions button');
+            const developerLink = document.getElementById("developer-link");
+            const telegramLink = document.getElementById("telegram-link");
+
+            if (!isGreen) {
+                
+                document.getElementById("payment-img").src = "https://i.postimg.cc/3yLtmkSB/20240901-003601.png";
+                successMessage.style.color = '#058030'; // Green color for "সেন্ড মানি সফল"
+                
+                detailsText.forEach(el => {
+                    el.style.color = '#058030'; 
+                });
+
+                buttons.forEach(button => {
+                    button.style.backgroundColor = '#058030'; 
+                });
+
+                icons.forEach(icon => {
+                    icon.style.stroke = '#058030'; 
+                });
+
+                buttonText.forEach(button => {
+                    button.style.color = '#058030';
+                });
+
+                
+                developerLink.style.color = '#058030';
+                telegramLink.style.color = '#058030';
+
+                isGreen = true; 
+            } else {
+              
+                document.getElementById("payment-img").src = "https://i.postimg.cc/v4XZXnzB/IMG-20240830-000712-removebg-preview.png";
+                successMessage.style.color = '#FF5722'; 
+                
+                detailsText.forEach(el => {
+                    el.style.color = '#FF5722'; 
+                });
+
+                buttons.forEach(button => {
+                    button.style.backgroundColor = '#FF5722'; 
+                });
+
+                icons.forEach(icon => {
+                    icon.style.stroke = '#FF5722'; 
+                });
+
+                buttonText.forEach(button => {
+                    button.style.color = '#FF5722'; 
+                });
+
+              
+                developerLink.style.color = '#FF5722';
+                telegramLink.style.color = '#FF5722';
+
+                isGreen = false; 
+            }
+        }
+
+        function downloadImage() {
+            const container = document.getElementById("payment-container");
+            const downloadButton = document.querySelector('.download');
+            const footer = document.querySelector('.footer');
+
+            downloadButton.classList.add('hidden');
+            footer.classList.add('hidden'); 
+
+            html2canvas(container, { useCORS: true }).then(canvas => {
+                const link = document.createElement("a");
+                link.download = "payment_screenshot.png";
+                link.href = canvas.toDataURL();
+                link.click();
+
+                downloadButton.classList.remove('hidden');
+                footer.classList.remove('hidden'); 
+            });
+        }
+        
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>
